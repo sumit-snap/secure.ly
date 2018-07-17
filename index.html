@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>Am i Secure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" /> 
+</head>
+    <body id="body1">
+        <nav class="navbar navbar-default ">
+            <div class"container">
+              <!-- Brand and toggle fet frouped for better mobile display-->
+              <div class=" row navbar-header">
+                <div class="col-lg-12">
+                    <h1>Secure.ly</h1>
+                </div>   
+              </div>
+            </div>
+        </nav>
+      </br></br></br>
+        <div class="container">
+          <div class="jumbotron text-center">
+              <h1>You Email might be hacked!!</h1>
+              <p>Let's Check it out!!</p>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Check your Email Security</button>
+          </div>
+          <div id="info">
+                  <div><h1>Our Total Data</h1></div>
+                  <div id="datainfo" class="col-sm-3"><span class="label label-info">293</span><br><p>Websites</p></div>
+                  <div id="datainfo" class="col-sm-3"><span class="label label-info">5,235,843,322</span><br><p>Accounts</p></div>
+                  <div id="datainfo" class="col-sm-3"><span class="label label-info">74,221</span><br><p>pastes</p></div>
+                  <div id="datainfo" class="col-sm-3"><span class="label label-info">81,458,818</span><br><p>paste accounts</p></div>
+          </div>
+          <div id="message"></div>
+          <div class="result" id="result"></div>
+        </div>
+        <!--button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>-->
+      </br></br></br></br></br>
+ 
+        <div class="container">
+          <div class="row">
+          <div  id="lefttable" class= "col-lg-6 col-sm-12 col-xs-12">
+            <h4><span id="datainfo" class="label label-info">Largest breaches</span></h4></br></br>
+            <table class="table table-hover">
+            <tbody>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/OnlinerSpambot.png" alt="Onliner Spambot logo"></td><td class="pwnCount">711,477,622</td><td class="pwnCompany"><a href="/PwnedWebsites#OnlinerSpambot" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="OnlinerSpambot" data-remote="false">Onliner Spambot accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/ExploitIn.svg" alt="Exploit.In logo"></td><td class="pwnCount">593,427,119</td><td class="pwnCompany"><a href="/PwnedWebsites#ExploitIn" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="ExploitIn" data-remote="false">Exploit.In accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/AntiPublic.svg" alt="Anti Public Combo List logo"></td><td class="pwnCount">457,962,538</td><td class="pwnCompany"><a href="/PwnedWebsites#AntiPublic" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="AntiPublic" data-remote="false">Anti Public Combo List accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/RiverCityMedia.png" alt="River City Media Spam List logo"></td><td class="pwnCount">393,430,309</td><td class="pwnCompany"><a href="/PwnedWebsites#RiverCityMedia" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="RiverCityMedia" data-remote="false">River City Media Spam List accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/MySpace.svg" alt="MySpace logo"></td><td class="pwnCount">359,420,698</td><td class="pwnCompany"><a href="/PwnedWebsites#MySpace" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="MySpace" data-remote="false">MySpace accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/NetEase.svg" alt="NetEase logo"></td><td class="pwnCount">234,842,089</td><td class="pwnCompany"><a href="/PwnedWebsites#NetEase" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="NetEase" data-remote="false">NetEase accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/LinkedIn.svg" alt="LinkedIn logo"></td><td class="pwnCount">164,611,595</td><td class="pwnCompany"><a href="/PwnedWebsites#LinkedIn" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="LinkedIn" data-remote="false">LinkedIn accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Adobe.svg" alt="Adobe logo"></td><td class="pwnCount">152,445,165</td><td class="pwnCompany"><a href="/PwnedWebsites#Adobe" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Adobe" data-remote="false">Adobe accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Badoo.svg" alt="Badoo logo"></td><td class="pwnCount">112,005,531</td><td class="pwnCompany"><a href="/PwnedWebsites#Badoo" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Badoo" data-remote="false">Badoo accounts</a></td></tr>
+            <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Pemiblanc.svg" alt="Pemiblanc logo"></td><td class="pwnCount">110,964,206</td><td class="pwnCompany"><a href="/PwnedWebsites#Pemiblanc" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Pemiblanc" data-remote="false">Pemiblanc accounts</a></td></tr>
+            </tbody>
+            </table>
+            </div>
+          <div id="righttable" class="col-lg-6 col-sm-12 col-xs-12">
+                <h4><span id="datainfo" class="label label-info">Recent breaches</span></h4></br></br>
+                <table class="table table-hover">
+                <tbody>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Pemiblanc.svg" alt="Pemiblanc logo"></td><td class="pwnCount">110,964,206</td><td class="pwnCompany"><a href="/PwnedWebsites#Pemiblanc" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Pemiblanc" data-remote="false">Pemiblanc accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Yatra.svg" alt="Yatra logo"></td><td class="pwnCount">5,033,997</td><td class="pwnCompany"><a href="/PwnedWebsites#Yatra" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Yatra" data-remote="false">Yatra accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/LightsHope.svg" alt="Light's Hope logo"></td><td class="pwnCount">30,484</td><td class="pwnCompany"><a href="/PwnedWebsites#LightsHope" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="LightsHope" data-remote="false">Light's Hope accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Gaadi.png" alt="Gaadi logo"></td><td class="pwnCount">4,261,179</td><td class="pwnCompany"><a href="/PwnedWebsites#Gaadi" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Gaadi" data-remote="false">Gaadi accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/TrikSpamBotnet.png" alt="Trik Spam Botnet logo"></td><td class="pwnCount">43,432,346</td><td class="pwnCompany"><a href="/PwnedWebsites#TrikSpamBotnet" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="TrikSpamBotnet" data-remote="false">Trik Spam Botnet accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Estonia.svg" alt="Estonian Citizens (via Estonian Cybercrime Bureau) logo"></td><td class="pwnCount">655,161</td><td class="pwnCompany"><a href="/PwnedWebsites#Estonia" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Estonia" data-remote="false">Estonian Citizens (via Estonian Cybercrime Bureau) accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Creative.svg" alt="Creative logo"></td><td class="pwnCount">483,015</td><td class="pwnCompany"><a href="/PwnedWebsites#Creative" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Creative" data-remote="false">Creative accounts</a></td> </tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/LinuxForums.png" alt="Linux Forums logo"></td><td class="pwnCount">275,785</td><td class="pwnCompany"><a href="/PwnedWebsites#LinuxForums" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="LinuxForums" data-remote="false">Linux Forums accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/Ticketfly.svg" alt="Ticketfly logo"></td><td class="pwnCount">26,151,608</td><td class="pwnCompany"><a href="/PwnedWebsites#Ticketfly" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="Ticketfly" data-remote="false">Ticketfly accounts</a></td></tr>
+                <tr><td><img class="pwnLogo tiny" src="https://haveibeenpwned.com/Content/Images/PwnedLogos/ViewFines.png" alt="ViewFines logo"></td><td class="pwnCount">777,649</td><td class="pwnCompany"><a href="/PwnedWebsites#ViewFines" data-toggle="modal" data-target="#pwnedCompanyOverview" data-pwned="ViewFines" data-remote="false">ViewFines accounts</a></td></tr>
+                </tbody>
+                </table>
+              </div>
+        </div></div>
+      </br></br></br></br>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Email Checker</h4>
+              </div>
+              <div class="modal-body">
+                  <input id="id_email" class="text-center" type="email" placeholder="Enter email address here">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" onclick="checkEmail();">Check Email</button>
+              </div>
+            </div>
+          </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div></div>      
+
+        <!--jQuery(necessary for Bootstrap's JavaScript plugin-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+</body>
+</html>

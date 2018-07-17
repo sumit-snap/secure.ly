@@ -1,0 +1,49 @@
+body{
+    background-color:#f3f3f3;
+}
+.jumbotron{
+    background-color: white;
+}
+.pwnLogo.tiny{max-height:28px;max-width:50px}
+.navbar{
+    text-align: center;
+    background-color: #e0e1e2;
+}
+td{
+    background-color: #e8e8e8;
+}
+h1{
+    padding-left:20px;
+    color:#9ea0a3;
+}
+#lefttable{
+    margin:0px;
+}
+#righttable{
+    margin:0px;
+}
+#datainfo{
+    font-size: 40px;
+    text-align: center;
+}
+#di{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+
+#breachdata{
+    color:red;
+}
+#breachinfo{
+    color: black;
+}
+#websitename{
+    font-size: 20px;
+    width: 100%;
+}
