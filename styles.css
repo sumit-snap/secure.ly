@@ -5,9 +5,20 @@ body{
     background-color: white;
 }
 .pwnLogo.tiny{max-height:28px;max-width:50px}
+
+ .navbar-brand {
+    font-size: 30px;
+    color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
 .navbar{
     text-align: center;
-    background-color: #e0e1e2;
+}
+.box{
+    border: 5px solid #e0e1e2;
+}
+.box2{
+    border:5px solid red;
 }
 td{
     background-color: #e8e8e8;
