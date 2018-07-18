@@ -33,8 +33,6 @@ function displayEmailResult(result){
     if(result.message) {
         // clearing the content of div
         div.innerHTML = "";
-        // clearing the content of div
-        div.innerHTML = "";
         //change the background color
         console.log(document.body.style.background = "#d6e9c6");
         //change the navbar color
@@ -45,10 +43,11 @@ function displayEmailResult(result){
         $("#result11").text("Your Account is not Hacked");
         $("#resultsolution11").text("Now Smile :)");
         $("#checker11").text("Click to check another Account");
+
         //if email is not hacked
         msgDiv.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
-                                <strong>Good News!</strong> Your email address is Safe. \
+                                <strong>Good News!</strong> Your email address is Safe :) \
                             </div>';
     }
         //if email is hacked
@@ -65,8 +64,8 @@ function displayEmailResult(result){
         $("#checker11").text("Click to check another Account");
         msgDiv.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
-                                <strong>Hacked!!</strong> Your Account details has been leaked!! . \
-                            </div>';
+                                <strong>Hacked!!</strong> Your Account details has been leaked!!.. <strong id="thesolution">Change your password now </strong> . \
+                            </div>'
                             
         // clearing the contents of div
         div.innerHTML = "";
