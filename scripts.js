@@ -34,7 +34,8 @@ function displayEmailResult(result){
         // clearing the content of div
         div.innerHTML = "";
         console.log(document.body.style.background = "#d6e9c6");
-        //document.querySelectorAll('#body1').style.background-color = "black"; 
+        $(".navbar").css({"background-color":"#5eff61"});
+        $(".box").css({"border":"5px solid #5eff61"});
         //if email is not hacked
         msgDiv.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
@@ -43,7 +44,9 @@ function displayEmailResult(result){
     }
         //if email is hacked
     else{
-        console.log(document.body.style.background = "#f2dede");
+        console.log(document.body.style.background = "#ff7777");
+        $(".navbar").css({"background-color":"red"});
+        $(".box").css({"border":"5px solid red"});
         msgDiv.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
                                 <strong>Hacked!!</strong> Your Account details has been leaked!! . \
@@ -56,7 +59,7 @@ function displayEmailResult(result){
         var i=0;
         // loop to show every breach
         result.forEach(function(currentResult){
-            var hackedHTMLDiv = `<div class="jumbotron" id="id_${i}"> \
+            var hackedHTMLDiv = `<div class="jumbotron box2" id="id_${i}"> \
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-4">
                                             <strong><h5 id="breachdata">${currentResult.Title}: </strong><small id="breachinfo"><a target="_blank" href="${currentResult.Domain}">Website Name</h5>
@@ -67,9 +70,6 @@ function displayEmailResult(result){
                                         <div class="col-xs-12 col-sm-8">
                                             <h5 id="websitename" class="btn btn-primary">${currentResult.Name}</h5></br></br>
                                             <p id="resultdescription">${currentResult.Description}</p>
-                                        </div>
-                                        <div class="col-xs-12" id="data_id_${i}>
-                                            <h5>Compromised data</h5>
                                         </div>
                                     </div>
                                 </div>`;
@@ -87,6 +87,6 @@ function displayEmailResult(result){
         })
         console.log(result);
     }  
-}
+  }
 }
 // End
