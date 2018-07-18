@@ -33,9 +33,18 @@ function displayEmailResult(result){
     if(result.message) {
         // clearing the content of div
         div.innerHTML = "";
+        // clearing the content of div
+        div.innerHTML = "";
+        //change the background color
         console.log(document.body.style.background = "#d6e9c6");
+        //change the navbar color
         $(".navbar").css({"background-color":"#5eff61"});
+        //change the box border color
         $(".box").css({"border":"5px solid #5eff61"});
+        //change some text
+        $("#result11").text("Your Account is not Hacked");
+        $("#resultsolution11").text("Now Smile :)");
+        $("#checker11").text("Click to check another Account");
         //if email is not hacked
         msgDiv.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
@@ -44,9 +53,16 @@ function displayEmailResult(result){
     }
         //if email is hacked
     else{
+        //change the background color
         console.log(document.body.style.background = "#ff7777");
+        //change the navbar color
         $(".navbar").css({"background-color":"red"});
+        //change the box border color
         $(".box").css({"border":"5px solid red"});
+        $("#result11").text("Your Account is Hacked!!");
+        //change some text
+        $("#resultsolution11").text("Now what will you do :(");
+        $("#checker11").text("Click to check another Account");
         msgDiv.innerHTML = '<div class="alert alert-danger alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
                                 <strong>Hacked!!</strong> Your Account details has been leaked!! . \
