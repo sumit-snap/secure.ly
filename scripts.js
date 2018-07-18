@@ -47,7 +47,7 @@ function displayEmailResult(result){
         //if email is not hacked
         msgDiv.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert"> \
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> \
-                                <strong>Good News!</strong> Your email address is Safe :) \
+                                <strong>Good News!</strong> Your email account is Safe :) \
                             </div>';
     }
         //if email is hacked
